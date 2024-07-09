@@ -1,0 +1,23 @@
+[
+  {
+    "model": "core.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$f84c3Vcfc3qz2PiemoxvLO$AXkQJSPv5hbT84n42uZTY7IFQeu4856WL+mE2lgFF+A=",
+      "last_login": null,
+      "email": "folderr.admin@yopmail.com",
+      "first_name": "Admin",
+      "last_name": "Admin",
+      "date_joined": "2022-06-09T06:14:08.666Z",
+      "avatar": "default.jpg",
+      "is_active": true,
+      "is_staff": true,
+      "is_superuser": true,
+      "terms_agreed": false,
+      "phone_number": "+917096967474",
+      "groups": [],
+      "user_permissions": [],
+      "is_verified" : false
+    }
+  }
+]

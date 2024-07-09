@@ -1,0 +1,22 @@
+[Unit]
+Description = folderr Gunicorn
+After = network.target
+
+[Service]
+PIDFile = /run/folderr/django.pid
+User = ubuntu
+Group = ubuntu
+Environment="SIWA_PKEY_PATH=/etc/folderr/siwa_pkey"
+Environment="DOT_ENV_FILE_PATH=/etc/folderr/appconfig.env"
+WorkingDirectory = /home/ubuntu/folderr/app
+ExecStartPre = +/usr/bin/mkdir -p /run/folderr
+ExecStartPre = +/usr/bin/chown -R ubuntu:ubuntu /run/folderr
+ExecStart = /home/ubuntu/.local/bin/poetry run gunicorn backend.wsgi --access-logfile '-' --log-level 'debug' -b 127.0.0.1:8000 --pid /run/folderr/django.pid --workers=2 --chdir=/home/ubuntu/folderr/app
+ExecReload = +/usr/bin/kill -s HUP $MAINPID
+ExecStop = +/usr/bin/kill -s TERM $MAINPID
+ExecStopPost = +/usr/bin/rm -rf /run/folderr/django.pid
+PrivateTmp = true
+TimeoutSec=900
+
+[Install]
+WantedBy = multi-user.target

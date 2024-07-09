@@ -1,0 +1,9 @@
+Hello,
+
+{{ user.first_name }} {{ user.last_name }} send you a folder.
+Follow the link below to claim it.
+
+{{ cta_url }}
+
+Best regards,
+The Folderr Team

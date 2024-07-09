@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for resetting user resource usage
+
+[Timer]
+OnBootSec=10m
+OnUnitActiveSec=10m
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=Create task reminders
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+ExecStart=/usr/bin/folderr-create-task-reminders.sh

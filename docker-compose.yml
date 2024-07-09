@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  # APP (Django)
+  web:
+    container_name: folderr_django
+    build: ./app
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./app/:/usr/src/app/
+    ports:
+      - 8000:8000
+    env_file:
+      - ./.env.dev
+  
+  # DATABASE (PostgreSQL)
+  db:
+    container_name: folderr_db
+    image: postgres:14.3-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=folderr
+      - POSTGRES_PASSWORD=folderr
+      - POSTGRES_DB=folderr_dev
+  
+  # MQ BROKER (RabbitMQ)
+  rabbitmq:
+    container_name: folderr_rabbitmq
+    image: rabbitmq:3-management
+    env_file:
+      - ./.env.dev
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq/mnesia/guest@guest
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  
+  # WORKER (Celery)
+  worker:
+    container_name: folderr_celery
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    command: celery -A backend worker
+    volumes:
+      - ./app/:/usr/src/app/
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - rabbitmq
+  
+  # (Flower)
+  # flower:
+  #   build: ./app
+  #   env_file:
+  #     - ./.env.dev
+  #   command: flower --basic_auth=guest:guest -A folderr --port=5555 --persistent=True
+  #   volumes:
+  #     - ./app/:/usr/src/app/
+  #   depends_on:
+  #     - db
+  #     - rabbitmq
+  #     - worker
+  #   ports:
+  #     - "5555:5555"
+
+volumes:
+  postgres_data:
+  rabbitmq_data:

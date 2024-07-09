@@ -1,0 +1,6 @@
+-c ./base.txt
+
+django-storages>=1.13,<2.0 # https://pypi.org/project/django-storages/
+gunicorn # https://github.com/benoitc/gunicorn
+
+django-anymail[amazon_ses]>=9.0,<10.0 # https://pypi.org/project/django-anymail/

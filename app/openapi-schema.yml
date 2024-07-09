@@ -1,0 +1,4472 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /api/auth/change-password/:
+    get:
+      operationId: listUsers
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ChangePassword'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createUser
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChangePassword'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ChangePassword'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ChangePassword'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChangePassword'
+          description: ''
+      tags:
+      - api
+  /api/auth/change-password/{id}/:
+    get:
+      operationId: retrieveUser
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChangePassword'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateUser
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChangePassword'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ChangePassword'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ChangePassword'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChangePassword'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateUser
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChangePassword'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ChangePassword'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ChangePassword'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChangePassword'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyUser
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/auth/update-avatar/:
+    get:
+      operationId: listUsers
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/UpdateProfileAvatar'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createUser
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateProfileAvatar'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UpdateProfileAvatar'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UpdateProfileAvatar'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateProfileAvatar'
+          description: ''
+      tags:
+      - api
+  /api/auth/update-avatar/{id}/:
+    get:
+      operationId: retrieveUser
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateProfileAvatar'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateUser
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateProfileAvatar'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UpdateProfileAvatar'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UpdateProfileAvatar'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateProfileAvatar'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateUser
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateProfileAvatar'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UpdateProfileAvatar'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UpdateProfileAvatar'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateProfileAvatar'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyUser
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/auth/profile/update:
+    get:
+      operationId: retrieveUpdateProfile
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateProfile'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateUpdateProfile
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateProfile'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UpdateProfile'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UpdateProfile'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateProfile'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateUpdateProfile
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateProfile'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UpdateProfile'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UpdateProfile'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateProfile'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyUpdateProfile
+      description: ''
+      parameters: []
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/user-exists/{email}:
+    get:
+      operationId: retrievecheck_email
+      description: ''
+      parameters:
+      - name: email
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+  /api/users/:
+    get:
+      operationId: listUsers
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+          description: ''
+      tags:
+      - api
+  /api/files/:
+    get:
+      operationId: listFiles
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createFile
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/File'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/File'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/File'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - api
+  /api/files/recent_file/:
+    get:
+      operationId: recentFileFile
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - api
+  /api/files/{id}/:
+    get:
+      operationId: retrieveFile
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A UUID string identifying this file.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateFile
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A UUID string identifying this file.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/File'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/File'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/File'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateFile
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A UUID string identifying this file.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/File'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/File'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/File'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyFile
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A UUID string identifying this file.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/files/{id}/copy-file/:
+    get:
+      operationId: copyFileFile
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A UUID string identifying this file.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: copyFileFile
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A UUID string identifying this file.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/File'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/File'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/File'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - api
+  /api/folders/:
+    get:
+      operationId: listFolders
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createFolder
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Folder'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - api
+  /api/folders/share/:
+    get:
+      operationId: shareFolder
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - api
+  /api/folders/{id}/:
+    get:
+      operationId: retrieveFolder
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this folder.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateFolder
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this folder.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Folder'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateFolder
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this folder.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Folder'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyFolder
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this folder.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/assets/:
+    get:
+      operationId: listAssetTypes
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AssetType'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createAssetType
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetType'
+          description: ''
+      tags:
+      - api
+  /api/assets/assets-list/:
+    get:
+      operationId: assetsListAssetType
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetType'
+          description: ''
+      tags:
+      - api
+  /api/assets/{id}/:
+    get:
+      operationId: retrieveAssetType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this asset type.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetType'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateAssetType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this asset type.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetType'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateAssetType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this asset type.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetType'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyAssetType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this asset type.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/newsfeed/:
+    get:
+      operationId: listUserActivitys
+      description: ''
+      parameters:
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      - name: paginate
+        required: false
+        in: query
+        description: Number of results to return per page.
+        schema:
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                    example: 123
+                  next:
+                    type: string
+                    nullable: true
+                    format: uri
+                    example: http://api.example.org/accounts/?page=4
+                  previous:
+                    type: string
+                    nullable: true
+                    format: uri
+                    example: http://api.example.org/accounts/?page=2
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/UserActivity'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createUserActivity
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserActivity'
+          description: ''
+      tags:
+      - api
+  /api/newsfeed/newest/:
+    get:
+      operationId: newestUserActivity
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserActivity'
+          description: ''
+      tags:
+      - api
+  /api/newsfeed/{id}/:
+    get:
+      operationId: retrieveUserActivity
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user activity.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserActivity'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateUserActivity
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user activity.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserActivity'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateUserActivity
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user activity.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserActivity'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyUserActivity
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user activity.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/sticky-notes/:
+    get:
+      operationId: listStickyNotes
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/StickyNote'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createStickyNote
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StickyNote'
+          description: ''
+      tags:
+      - api
+  /api/sticky-notes/{id}/:
+    get:
+      operationId: retrieveStickyNote
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this sticky note.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StickyNote'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateStickyNote
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this sticky note.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StickyNote'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateStickyNote
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this sticky note.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StickyNote'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyStickyNote
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this sticky note.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/comments/:
+    get:
+      operationId: listComments
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Comment'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createComment
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comment'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Comment'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Comment'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+          description: ''
+      tags:
+      - api
+  /api/comments/{id}/:
+    get:
+      operationId: retrieveComment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this comment.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateComment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this comment.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comment'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Comment'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Comment'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateComment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this comment.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comment'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Comment'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Comment'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyComment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this comment.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/shared-with-me/:
+    get:
+      operationId: listShares
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Share'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createShare
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Share'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Share'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Share'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Share'
+          description: ''
+      tags:
+      - api
+  /api/shared-with-me/receiver/:
+    get:
+      operationId: receiveShare
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Share'
+          description: ''
+      tags:
+      - api
+  /api/shared-with-me/{id}/:
+    get:
+      operationId: retrieveShare
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this share.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Share'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateShare
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this share.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Share'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Share'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Share'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Share'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateShare
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this share.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Share'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Share'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Share'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Share'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyShare
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this share.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/tasks/:
+    get:
+      operationId: listTasks
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createTask
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Task'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Task'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+          description: ''
+      tags:
+      - api
+  /api/tasks/{id}/:
+    get:
+      operationId: retrieveTask
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this task.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateTask
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this task.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Task'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Task'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateTask
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this task.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Task'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Task'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyTask
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this task.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/files/{file_id}/get_url:
+    get:
+      operationId: listCreatePreSignedURLs
+      description: ''
+      parameters:
+      - name: file_id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - api
+  /api/files/{file_id}/analyze-expense:
+    get:
+      operationId: listOCRs
+      description: ''
+      parameters:
+      - name: file_id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - api
+  /api/global-serch/:
+    get:
+      operationId: listGlobalSearchs
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - api
+  /api/users/global-search/:
+    get:
+      operationId: listUserSearchs
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/UserSearch'
+          description: ''
+      tags:
+      - api
+  /filemanager/files/:
+    get:
+      operationId: listFiles
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - filemanager
+    post:
+      operationId: createFile
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/File'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/File'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/File'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/files/recent_file/:
+    get:
+      operationId: recentFileFile
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/files/{id}/:
+    get:
+      operationId: retrieveFile
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A UUID string identifying this file.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - filemanager
+    put:
+      operationId: updateFile
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A UUID string identifying this file.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/File'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/File'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/File'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - filemanager
+    patch:
+      operationId: partialUpdateFile
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A UUID string identifying this file.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/File'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/File'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/File'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - filemanager
+    delete:
+      operationId: destroyFile
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A UUID string identifying this file.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/files/{id}/copy-file/:
+    get:
+      operationId: copyFileFile
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A UUID string identifying this file.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - filemanager
+    post:
+      operationId: copyFileFile
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A UUID string identifying this file.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/File'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/File'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/File'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/File'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/folders/:
+    get:
+      operationId: listFolders
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - filemanager
+    post:
+      operationId: createFolder
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Folder'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/folders/share/:
+    get:
+      operationId: shareFolder
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/folders/{id}/:
+    get:
+      operationId: retrieveFolder
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this folder.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - filemanager
+    put:
+      operationId: updateFolder
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this folder.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Folder'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - filemanager
+    patch:
+      operationId: partialUpdateFolder
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this folder.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Folder'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - filemanager
+    delete:
+      operationId: destroyFolder
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this folder.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/assets/:
+    get:
+      operationId: listAssetTypes
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AssetType'
+          description: ''
+      tags:
+      - filemanager
+    post:
+      operationId: createAssetType
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetType'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/assets/assets-list/:
+    get:
+      operationId: assetsListAssetType
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetType'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/assets/{id}/:
+    get:
+      operationId: retrieveAssetType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this asset type.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetType'
+          description: ''
+      tags:
+      - filemanager
+    put:
+      operationId: updateAssetType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this asset type.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetType'
+          description: ''
+      tags:
+      - filemanager
+    patch:
+      operationId: partialUpdateAssetType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this asset type.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AssetType'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetType'
+          description: ''
+      tags:
+      - filemanager
+    delete:
+      operationId: destroyAssetType
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this asset type.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/newsfeed/:
+    get:
+      operationId: listUserActivitys
+      description: ''
+      parameters:
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      - name: paginate
+        required: false
+        in: query
+        description: Number of results to return per page.
+        schema:
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                    example: 123
+                  next:
+                    type: string
+                    nullable: true
+                    format: uri
+                    example: http://api.example.org/accounts/?page=4
+                  previous:
+                    type: string
+                    nullable: true
+                    format: uri
+                    example: http://api.example.org/accounts/?page=2
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/UserActivity'
+          description: ''
+      tags:
+      - filemanager
+    post:
+      operationId: createUserActivity
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserActivity'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/newsfeed/newest/:
+    get:
+      operationId: newestUserActivity
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserActivity'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/newsfeed/{id}/:
+    get:
+      operationId: retrieveUserActivity
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user activity.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserActivity'
+          description: ''
+      tags:
+      - filemanager
+    put:
+      operationId: updateUserActivity
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user activity.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserActivity'
+          description: ''
+      tags:
+      - filemanager
+    patch:
+      operationId: partialUpdateUserActivity
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user activity.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UserActivity'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserActivity'
+          description: ''
+      tags:
+      - filemanager
+    delete:
+      operationId: destroyUserActivity
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this user activity.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/sticky-notes/:
+    get:
+      operationId: listStickyNotes
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/StickyNote'
+          description: ''
+      tags:
+      - filemanager
+    post:
+      operationId: createStickyNote
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StickyNote'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/sticky-notes/{id}/:
+    get:
+      operationId: retrieveStickyNote
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this sticky note.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StickyNote'
+          description: ''
+      tags:
+      - filemanager
+    put:
+      operationId: updateStickyNote
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this sticky note.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StickyNote'
+          description: ''
+      tags:
+      - filemanager
+    patch:
+      operationId: partialUpdateStickyNote
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this sticky note.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StickyNote'
+          description: ''
+      tags:
+      - filemanager
+    delete:
+      operationId: destroyStickyNote
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this sticky note.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/comments/:
+    get:
+      operationId: listComments
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Comment'
+          description: ''
+      tags:
+      - filemanager
+    post:
+      operationId: createComment
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comment'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Comment'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Comment'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/comments/{id}/:
+    get:
+      operationId: retrieveComment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this comment.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+          description: ''
+      tags:
+      - filemanager
+    put:
+      operationId: updateComment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this comment.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comment'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Comment'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Comment'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+          description: ''
+      tags:
+      - filemanager
+    patch:
+      operationId: partialUpdateComment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this comment.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comment'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Comment'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Comment'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Comment'
+          description: ''
+      tags:
+      - filemanager
+    delete:
+      operationId: destroyComment
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this comment.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/shared-with-me/:
+    get:
+      operationId: listShares
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Share'
+          description: ''
+      tags:
+      - filemanager
+    post:
+      operationId: createShare
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Share'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Share'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Share'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Share'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/shared-with-me/receiver/:
+    get:
+      operationId: receiveShare
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Share'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/shared-with-me/{id}/:
+    get:
+      operationId: retrieveShare
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this share.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Share'
+          description: ''
+      tags:
+      - filemanager
+    put:
+      operationId: updateShare
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this share.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Share'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Share'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Share'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Share'
+          description: ''
+      tags:
+      - filemanager
+    patch:
+      operationId: partialUpdateShare
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this share.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Share'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Share'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Share'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Share'
+          description: ''
+      tags:
+      - filemanager
+    delete:
+      operationId: destroyShare
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this share.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/tasks/:
+    get:
+      operationId: listTasks
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
+          description: ''
+      tags:
+      - filemanager
+    post:
+      operationId: createTask
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Task'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Task'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/tasks/{id}/:
+    get:
+      operationId: retrieveTask
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this task.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+          description: ''
+      tags:
+      - filemanager
+    put:
+      operationId: updateTask
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this task.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Task'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Task'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+          description: ''
+      tags:
+      - filemanager
+    patch:
+      operationId: partialUpdateTask
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this task.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Task'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Task'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Task'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+          description: ''
+      tags:
+      - filemanager
+    delete:
+      operationId: destroyTask
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this task.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/files/{file_id}/get_url:
+    get:
+      operationId: listCreatePreSignedURLs
+      description: ''
+      parameters:
+      - name: file_id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/files/{file_id}/analyze-expense:
+    get:
+      operationId: listOCRs
+      description: ''
+      parameters:
+      - name: file_id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/global-serch/:
+    get:
+      operationId: listGlobalSearchs
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - filemanager
+  /expenses/api/expenses/:
+    get:
+      operationId: listExpenses
+      description: ''
+      parameters:
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                    example: 123
+                  next:
+                    type: string
+                    nullable: true
+                    format: uri
+                    example: http://api.example.org/accounts/?page=4
+                  previous:
+                    type: string
+                    nullable: true
+                    format: uri
+                    example: http://api.example.org/accounts/?page=2
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Expense'
+          description: ''
+      tags:
+      - expenses
+    post:
+      operationId: createExpense
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Expense'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Expense'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Expense'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Expense'
+          description: ''
+      tags:
+      - expenses
+  /expenses/api/expenses/{id}/:
+    get:
+      operationId: retrieveExpense
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Expense'
+          description: ''
+      tags:
+      - expenses
+  /api/auth/reset-password-email:
+    post:
+      operationId: createPasswordResetEmail
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PasswordResetEmail'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PasswordResetEmail'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PasswordResetEmail'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PasswordResetEmail'
+          description: ''
+      tags:
+      - api
+  /api/auth/reset-password-confirm/{uidb64}/{token}:
+    post:
+      operationId: createPasswordResetConfirm
+      description: ''
+      parameters:
+      - name: uidb64
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: token
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PasswordResetConfirm'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PasswordResetConfirm'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PasswordResetConfirm'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PasswordResetConfirm'
+          description: ''
+      tags:
+      - api
+  /api/auth/reset-password-otp:
+    post:
+      operationId: createPasswordResetOTP
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PasswordResetOTP'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PasswordResetOTP'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PasswordResetOTP'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PasswordResetOTP'
+          description: ''
+      tags:
+      - api
+  /api/auth/reset-password-validate-otp:
+    post:
+      operationId: createOTPValidate
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OTPValidate'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/OTPValidate'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/OTPValidate'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OTPValidate'
+          description: ''
+      tags:
+      - api
+  /api/auth/reset-password-otp-confirm:
+    post:
+      operationId: createPasswordResetConfirmOTP
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PasswordResetConfirmOTP'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PasswordResetConfirmOTP'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PasswordResetConfirmOTP'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PasswordResetConfirmOTP'
+          description: ''
+      tags:
+      - api
+  /api/auth/mobile-number-verify:
+    post:
+      operationId: createMobileNumberVerify
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+  /api/user/:
+    post:
+      operationId: createUserRegister
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserRegister'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UserRegister'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UserRegister'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserRegister'
+          description: ''
+      tags:
+      - api
+  /api/token/:
+    post:
+      operationId: createUserObtainPair
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserObtainPair'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UserObtainPair'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UserObtainPair'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserObtainPair'
+          description: ''
+      tags:
+      - api
+  /api/token/refresh/:
+    post:
+      operationId: createCustomTokenRefresh
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CustomTokenRefresh'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/CustomTokenRefresh'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/CustomTokenRefresh'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CustomTokenRefresh'
+          description: ''
+      tags:
+      - api
+  /api/token/verify/:
+    post:
+      operationId: createTokenVerify
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+  /api/folders/copy-folder/:
+    post:
+      operationId: copyFolderFolder
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Folder'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - api
+  /api/folders/move-folder/:
+    post:
+      operationId: moveFolderFolder
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Folder'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - api
+  /api/folders/{id}/copy-link/:
+    post:
+      operationId: copyLinkFolder
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this folder.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Folder'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - api
+  /api/sticky-notes/{id}/copy-sticky-note/:
+    post:
+      operationId: copyStickyNoteStickyNote
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this sticky note.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StickyNote'
+          description: ''
+      tags:
+      - api
+  /api/contact-us/:
+    post:
+      operationId: createContactUs
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ContactUs'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/ContactUs'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/ContactUs'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ContactUs'
+          description: ''
+      tags:
+      - api
+  /filemanager/folders/copy-folder/:
+    post:
+      operationId: copyFolderFolder
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Folder'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/folders/move-folder/:
+    post:
+      operationId: moveFolderFolder
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Folder'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/folders/{id}/copy-link/:
+    post:
+      operationId: copyLinkFolder
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this folder.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Folder'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Folder'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Folder'
+          description: ''
+      tags:
+      - filemanager
+  /filemanager/sticky-notes/{id}/copy-sticky-note/:
+    post:
+      operationId: copyStickyNoteStickyNote
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this sticky note.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/StickyNote'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StickyNote'
+          description: ''
+      tags:
+      - filemanager
+  /api/social_auth/google/:
+    post:
+      operationId: createGoogleSocialAuth
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GoogleSocialAuth'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/GoogleSocialAuth'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/GoogleSocialAuth'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GoogleSocialAuth'
+          description: ''
+      tags:
+      - api
+  /api/social_auth/facebook/:
+    post:
+      operationId: createFacebookSocialAuth
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FacebookSocialAuth'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/FacebookSocialAuth'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/FacebookSocialAuth'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FacebookSocialAuth'
+          description: ''
+      tags:
+      - api
+  /api/social_auth/apple/:
+    post:
+      operationId: createsiwa
+      description: 'Expects `code` and `id_token` as found in the
+
+        `authorization` object.
+
+
+        Can also receive `first_name` and `last_name` as
+
+        found in the `user` object.
+
+
+        Return user data in a dict
+
+        if the information provided is correct.'
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+  /api/folders/{id}/delete-media/:
+    delete:
+      operationId: deleteMediaFolder
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this folder.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /filemanager/folders/{id}/delete-media/:
+    delete:
+      operationId: deleteMediaFolder
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this folder.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - filemanager
+components:
+  schemas:
+    ChangePassword:
+      type: object
+      properties:
+        old_password:
+          type: string
+          writeOnly: true
+          maxLength: 255
+        new_password:
+          type: string
+          writeOnly: true
+          maxLength: 255
+        confirm_password:
+          type: string
+          writeOnly: true
+          maxLength: 255
+      required:
+      - old_password
+      - new_password
+      - confirm_password
+    UpdateProfileAvatar:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        avatar:
+          type: string
+          format: binary
+          nullable: true
+    UpdateProfile:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        first_name:
+          type: string
+          maxLength: 100
+        last_name:
+          type: string
+          maxLength: 100
+        email:
+          type: string
+          format: email
+          maxLength: 254
+        avatar:
+          type: string
+          format: binary
+          nullable: true
+        is_verified:
+          type: boolean
+      required:
+      - email
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        email:
+          type: string
+          format: email
+          maxLength: 254
+        avatar:
+          type: string
+          format: binary
+          nullable: true
+      required:
+      - email
+    File:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        created_by:
+          type: string
+          readOnly: true
+        created:
+          type: string
+          format: date-time
+          readOnly: true
+        updated:
+          type: string
+          format: date-time
+          readOnly: true
+        file_name:
+          type: string
+          maxLength: 1000
+        file:
+          type: string
+          format: binary
+        thumbnail:
+          type: string
+          format: binary
+          nullable: true
+        folder:
+          type: integer
+      required:
+      - file_name
+      - file
+      - folder
+    Folder:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        created:
+          type: string
+          format: date-time
+          readOnly: true
+        updated:
+          type: string
+          format: date-time
+          readOnly: true
+        title:
+          type: string
+          maxLength: 100
+        is_root:
+          type: boolean
+        is_public:
+          type: boolean
+        custom_fields:
+          type: object
+        created_by:
+          type: string
+          readOnly: true
+        parent:
+          type: integer
+          nullable: true
+        folder_type:
+          type: integer
+        asset_type:
+          type: integer
+          nullable: true
+        subfolders:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+                readOnly: true
+              created:
+                type: string
+                format: date-time
+                readOnly: true
+              updated:
+                type: string
+                format: date-time
+                readOnly: true
+              title:
+                type: string
+                maxLength: 100
+              is_root:
+                type: boolean
+              is_public:
+                type: boolean
+              custom_fields:
+                type: object
+              created_by:
+                type: integer
+              parent:
+                type: integer
+                nullable: true
+              folder_type:
+                type: integer
+              asset_type:
+                type: integer
+                nullable: true
+              files:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      format: uuid
+                    created_by:
+                      type: string
+                      readOnly: true
+                    created:
+                      type: string
+                      format: date-time
+                      readOnly: true
+                    updated:
+                      type: string
+                      format: date-time
+                      readOnly: true
+                    file_name:
+                      type: string
+                      maxLength: 1000
+                    file:
+                      type: string
+                      format: binary
+                    thumbnail:
+                      type: string
+                      format: binary
+                      nullable: true
+                    folder:
+                      type: integer
+                  required:
+                  - file_name
+                  - file
+                  - folder
+                readOnly: true
+              stickynotes:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      readOnly: true
+                    created_by:
+                      type: string
+                      readOnly: true
+                    created:
+                      type: string
+                      format: date-time
+                      readOnly: true
+                    updated:
+                      type: string
+                      format: date-time
+                      readOnly: true
+                    title:
+                      type: string
+                      maxLength: 100
+                    description:
+                      type: string
+                      maxLength: 500
+                    pin:
+                      type: boolean
+                    color:
+                      type: string
+                      maxLength: 10
+                    folder:
+                      type: integer
+                  required:
+                  - title
+                  - description
+                  - color
+                  - folder
+                readOnly: true
+              shared_with:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      readOnly: true
+                    sender:
+                      type: string
+                      readOnly: true
+                    created:
+                      type: string
+                      format: date-time
+                      readOnly: true
+                    permission:
+                      enum:
+                      - 1
+                      - 2
+                      - 3
+                      type: integer
+                    receiver_email:
+                      type: string
+                      format: email
+                      nullable: true
+                      maxLength: 256
+                    folder:
+                      type: integer
+                    receiver:
+                      type: integer
+                      nullable: true
+                  required:
+                  - permission
+                  - folder
+                readOnly: true
+            required:
+            - title
+            - created_by
+          readOnly: true
+        files:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+                format: uuid
+              created_by:
+                type: string
+                readOnly: true
+              created:
+                type: string
+                format: date-time
+                readOnly: true
+              updated:
+                type: string
+                format: date-time
+                readOnly: true
+              file_name:
+                type: string
+                maxLength: 1000
+              file:
+                type: string
+                format: binary
+              thumbnail:
+                type: string
+                format: binary
+                nullable: true
+              folder:
+                type: integer
+            required:
+            - file_name
+            - file
+            - folder
+          readOnly: true
+        stickynotes:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+                readOnly: true
+              created_by:
+                type: string
+                readOnly: true
+              created:
+                type: string
+                format: date-time
+                readOnly: true
+              updated:
+                type: string
+                format: date-time
+                readOnly: true
+              title:
+                type: string
+                maxLength: 100
+              description:
+                type: string
+                maxLength: 500
+              pin:
+                type: boolean
+              color:
+                type: string
+                maxLength: 10
+              folder:
+                type: integer
+            required:
+            - title
+            - description
+            - color
+            - folder
+          readOnly: true
+        shared_with:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+                readOnly: true
+              sender:
+                type: string
+                readOnly: true
+              created:
+                type: string
+                format: date-time
+                readOnly: true
+              permission:
+                enum:
+                - 1
+                - 2
+                - 3
+                type: integer
+              receiver_email:
+                type: string
+                format: email
+                nullable: true
+                maxLength: 256
+              folder:
+                type: integer
+              receiver:
+                type: integer
+                nullable: true
+            required:
+            - permission
+            - folder
+          readOnly: true
+      required:
+      - title
+    AssetType:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        title:
+          type: string
+          maxLength: 255
+        suggested_folder:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+                readOnly: true
+              title:
+                type: string
+                maxLength: 255
+              asset_type:
+                type: integer
+            required:
+            - title
+            - asset_type
+          readOnly: true
+        suggested_field:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+                readOnly: true
+              title:
+                type: string
+                maxLength: 255
+              placeholder:
+                type: string
+                maxLength: 255
+              has_camera_access:
+                type: boolean
+              asset_type:
+                type: integer
+            required:
+            - title
+            - placeholder
+            - asset_type
+          readOnly: true
+      required:
+      - title
+    UserActivity:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        created_at:
+          type: string
+          format: date-time
+          readOnly: true
+        action:
+          enum:
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          type: integer
+        user:
+          type: integer
+        file:
+          type: string
+          nullable: true
+        folder:
+          type: integer
+          nullable: true
+        comment:
+          type: integer
+          nullable: true
+      required:
+      - action
+      - user
+    StickyNote:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        created_by:
+          type: string
+          readOnly: true
+        created:
+          type: string
+          format: date-time
+          readOnly: true
+        updated:
+          type: string
+          format: date-time
+          readOnly: true
+        title:
+          type: string
+          maxLength: 100
+        description:
+          type: string
+          maxLength: 500
+        pin:
+          type: boolean
+        color:
+          type: string
+          maxLength: 10
+        folder:
+          type: integer
+      required:
+      - title
+      - description
+      - color
+      - folder
+    Comment:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        user:
+          type: string
+          readOnly: true
+        created:
+          type: string
+          format: date-time
+          readOnly: true
+        updated:
+          type: string
+          format: date-time
+          readOnly: true
+        comment:
+          type: string
+        folder:
+          type: integer
+          nullable: true
+        file:
+          type: string
+          nullable: true
+      required:
+      - comment
+    Share:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        sender:
+          type: string
+          readOnly: true
+        created:
+          type: string
+          format: date-time
+          readOnly: true
+        permission:
+          enum:
+          - 1
+          - 2
+          - 3
+          type: integer
+        receiver_email:
+          type: string
+          format: email
+          nullable: true
+          maxLength: 256
+        folder:
+          type: integer
+        receiver:
+          type: integer
+          nullable: true
+      required:
+      - permission
+      - folder
+    Task:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        created_by:
+          type: string
+          readOnly: true
+        created_at:
+          type: string
+          format: date-time
+          readOnly: true
+        updated_at:
+          type: string
+          format: date-time
+          readOnly: true
+        title:
+          type: string
+          maxLength: 100
+        description:
+          type: string
+        task_date:
+          type: string
+          format: date
+          minimum: !!python/name:None.today ''
+        status:
+          type: boolean
+        folder:
+          type: integer
+      required:
+      - title
+      - description
+      - task_date
+      - folder
+    UserSearch:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        email:
+          type: string
+          format: email
+          maxLength: 254
+        avatar:
+          type: string
+          format: binary
+          nullable: true
+        first_name:
+          type: string
+          maxLength: 100
+        last_name:
+          type: string
+          maxLength: 100
+      required:
+      - email
+    Expense:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        summary:
+          type: object
+          readOnly: true
+        line_items:
+          type: object
+          readOnly: true
+        created_at:
+          type: string
+          format: date-time
+          readOnly: true
+        updated_at:
+          type: string
+          format: date-time
+          readOnly: true
+        file:
+          type: string
+      required:
+      - file
+    PasswordResetEmail:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+          minLength: 2
+      required:
+      - email
+    PasswordResetConfirm:
+      type: object
+      properties:
+        password:
+          type: string
+          writeOnly: true
+          maxLength: 255
+        confirm_password:
+          type: string
+          writeOnly: true
+          maxLength: 255
+      required:
+      - password
+      - confirm_password
+    PasswordResetOTP:
+      type: object
+      properties:
+        phone_number:
+          type: string
+      required:
+      - phone_number
+    OTPValidate:
+      type: object
+      properties:
+        otp:
+          type: string
+        phone_number:
+          type: string
+      required:
+      - otp
+      - phone_number
+    PasswordResetConfirmOTP:
+      type: object
+      properties:
+        password:
+          type: string
+          writeOnly: true
+          maxLength: 255
+        confirm_password:
+          type: string
+          writeOnly: true
+          maxLength: 255
+        otp:
+          type: string
+        phone_number:
+          type: string
+      required:
+      - password
+      - confirm_password
+      - otp
+      - phone_number
+    UserRegister:
+      type: object
+      properties:
+        first_name:
+          type: string
+          maxLength: 100
+        last_name:
+          type: string
+          maxLength: 100
+        email:
+          type: string
+          format: email
+          maxLength: 254
+        password:
+          type: string
+          writeOnly: true
+          maxLength: 128
+        phone_number:
+          type: string
+          nullable: true
+          maxLength: 15
+        terms_agreed:
+          type: boolean
+      required:
+      - email
+      - password
+    UserObtainPair:
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+          writeOnly: true
+      required:
+      - email
+      - password
+    CustomTokenRefresh:
+      type: object
+      properties:
+        refresh:
+          type: string
+        access:
+          type: string
+          readOnly: true
+      required:
+      - refresh
+    ContactUs:
+      type: object
+      properties:
+        name:
+          type: string
+          maxLength: 50
+        email:
+          type: string
+          format: email
+          maxLength: 256
+        msg:
+          type: string
+      required:
+      - name
+      - email
+      - msg
+    GoogleSocialAuth:
+      type: object
+      properties:
+        first_name:
+          type: string
+          maxLength: 50
+        last_name:
+          type: string
+          maxLength: 50
+        email:
+          type: string
+          maxLength: 256
+      required:
+      - first_name
+      - last_name
+      - email
+    FacebookSocialAuth:
+      type: object
+      properties:
+        auth_token:
+          type: string
+      required:
+      - auth_token

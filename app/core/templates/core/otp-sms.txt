@@ -1,0 +1,2 @@
+Use {{ code }} to log in to your Folderr account.
+Do not share this code with anyone.

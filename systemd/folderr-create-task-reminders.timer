@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for creating task reminders
+
+[Timer]
+OnBootSec=6h
+OnUnitActiveSec=6h
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,22 @@
+[Unit]
+Description = folderr Celery
+After = network.target
+
+[Service]
+PIDFile = /run/folderr/celery.pid
+User = ubuntu
+Group = ubuntu
+Environment="SIWA_PKEY_PATH=/etc/folderr/siwa_pkey"
+Environment="DOT_ENV_FILE_PATH=/etc/folderr/appconfig.env"
+WorkingDirectory = /home/ubuntu/folderr/app
+ExecStartPre = +/usr/bin/mkdir -p /run/folderr
+ExecStartPre = +/usr/bin/chown -R ubuntu:ubuntu /run/folderr
+ExecStart = /home/ubuntu/.local/bin/poetry run celery -A backend worker --loglevel=DEBUG
+ExecReload = +/usr/bin/kill -s HUP $MAINPID
+ExecStop = +/usr/bin/kill -s TERM $MAINPID
+ExecStopPost = +/usr/bin/rm -rf /run/folderr/celery.pid
+PrivateTmp = true
+TimeoutSec=900
+
+[Install]
+WantedBy = multi-user.target

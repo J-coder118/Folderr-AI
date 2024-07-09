@@ -1,0 +1,12 @@
+[
+  {
+    "model": "filemanager.foldertype",
+    "pk": 1,
+    "fields": { "title": "Asset" }
+  },
+  {
+    "model": "filemanager.foldertype",
+    "pk": 2,
+    "fields": { "title": "Record" }
+  }
+]

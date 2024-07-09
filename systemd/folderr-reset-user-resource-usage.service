@@ -1,0 +1,8 @@
+[Unit]
+Description=Reset user resource usage
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+ExecStart=/usr/bin/folderr-reset-user-resource-usage.sh

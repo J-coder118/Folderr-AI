@@ -1,0 +1,37 @@
+boto3>=1.26,<2.0 # https://pypi.org/project/boto3/
+celery>=5.2.0,<6.0 # https://pypi.org/project/celery/
+flower>=1.2,<2.0 # https://pypi.org/project/flower/
+Django>=4.0,<4.1 # https://pypi.org/project/Django/
+django-cors-headers>=3.13.0,<4.0 # https://pypi.org/project/django-cors-headers/
+djangorestframework>=3.14,<4.0 # https://pypi.org/project/djangorestframework/
+rest-framework-generic-relations>=2.1.0,<3.0 # https://pypi.org/project/rest-framework-generic-relations/
+djangorestframework-simplejwt>=5.2,<6.0 # https://pypi.org/project/djangorestframework-simplejwt/
+Pillow>=9.3,<10.0 # https://pypi.org/project/Pillow/
+psycopg2>=2.9,<3.0 # https://pypi.org/project/psycopg2/
+facebook-sdk>=3.1.0,<4.0 # https://pypi.org/project/facebook-sdk/
+pdf2image>=1.16,<2.0 # https://pypi.org/project/pdf2image/
+django-extensions>=3.2.1,<4.0 # https://pypi.org/project/django-extensions/
+django-environ>=0.9.0,<1.0 # https://pypi.org/project/django-environ/
+cryptography>=38,<39 # https://pypi.org/project/cryptography/
+requests>=2.28,<3.0 # https://pypi.org/project/requests/
+pyyaml==5.3.1 # https://pypi.org/project/PyYAML/
+uritemplate>=4.1.1,<5.0 # https://pypi.org/project/uritemplate/
+whitenoise>=6.2.0,<7.0 # https://pypi.org/project/whitenoise/
+redis>=4.3.5,<5.0 # https://pypi.org/project/redis/
+html2text # https://pypi.org/project/html2text/
+django-ckeditor>=6.5.1,<7.0 # https://pypi.org/project/django-ckeditor/
+dj-stripe>=2.7.3,<3.0 # https://pypi.org/project/dj-stripe/
+django-recurrence>=1.11.1,<2.0 # https://pypi.org/project/django-recurrence/
+django-colorfield>=0.8.0,<1.0 # https://pypi.org/project/django-colorfield/
+bleach>=5.0.1,<6.0 # https://pypi.org/project/bleach/
+pyotp>=2.8.0,<3.0 # https://pypi.org/project/pyotp/
+django-phonenumber-field[phonenumberslite]>=7.0.2,<8.0 # https://pypi.org/project/django-phonenumber-field/
+python-magic>=0.4.27,<1.0 # https://pypi.org/project/python-magic/
+pillow-heif>=0.10,<1.0 # https://pypi.org/project/pillow-heif/
+preview-generator[all] # https://pypi.org/project/preview-generator/
+langchain # https://pypi.org/project/langchain/
+nltk # https://pypi.org/project/nltk/
+pgvector # https://pypi.org/project/pgvector/
+openai
+tiktoken
+unstructured[local-inference]

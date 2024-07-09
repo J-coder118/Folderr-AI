@@ -1,0 +1,17 @@
+[
+    {
+      "model": "filemanager.assettype",
+      "pk": 1,
+      "fields": { "title": "Test" }
+    },
+    {
+      "model": "filemanager.suggestedfield",
+      "pk": 1,
+      "fields": { 
+            "title": "Name",
+            "placeholder" : "Name",
+            "asset_type" : 1 
+        }
+    }
+  ]
+  

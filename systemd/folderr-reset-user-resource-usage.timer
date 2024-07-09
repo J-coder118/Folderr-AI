@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for resetting user resource usage
+
+[Timer]
+OnCalendar=monthly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

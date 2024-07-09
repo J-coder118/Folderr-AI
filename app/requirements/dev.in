@@ -1,0 +1,12 @@
+-c ./base.txt
+
+black
+flake8
+isort
+Werkzeug
+factory-boy
+coverage
+django-coverage-plugin
+django-debug-toolbar
+numpy
+docker-compose

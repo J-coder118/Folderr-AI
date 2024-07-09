@@ -1,0 +1,37 @@
+# Docker compose for development only.
+volumes:
+  pg_data:
+
+services:
+
+  memcached:
+    image: memcached
+    ports:
+      - "127.0.0.1:11211:11211"
+
+  redis:
+    image: redis
+    ports:
+      - "127.0.0.1:6379:6379"
+
+  rabbitmq:
+    image: rabbitmq
+    ports:
+      - "127.0.0.1:5672:5672"
+
+  db:
+    image: ankane/pgvector
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: debug
+      POSTGRES_PASSWORD: debug
+      POSTGRES_DB: folderr
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "127.0.0.1:1025:1025"
+      - "127.0.0.1:8025:8025"

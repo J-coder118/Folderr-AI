@@ -1,0 +1,8 @@
+[Unit]
+Description=Sync Folderr users with Customer data
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+ExecStart=/usr/bin/folderr-sync-user-customer.sh

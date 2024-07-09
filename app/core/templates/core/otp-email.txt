@@ -1,0 +1,6 @@
+Hello {{ first_name|default:"" }},
+
+Use {{ code }} to log in to your Folderr account.
+
+Best regards,
+The Folderr Team

@@ -1,0 +1,58 @@
+[
+  {
+    "model": "filemanager.assettype",
+    "pk": 1,
+    "fields": {
+      "title": "HOME"
+    }
+  },
+  {
+    "model": "filemanager.assettype",
+    "pk": 6,
+    "fields": {
+      "title": "CARS & TRUCKS"
+    }
+  },
+  {
+    "model": "filemanager.assettype",
+    "pk": 7,
+    "fields": {
+      "title": "BOAT"
+    }
+  },
+  {
+    "model": "filemanager.assettype",
+    "pk": 8,
+    "fields": {
+      "title": "ATV/UTV/SNOW"
+    }
+  },
+  {
+    "model": "filemanager.assettype",
+    "pk": 9,
+    "fields": {
+      "title": "BICYCLE"
+    }
+  },
+  {
+    "model": "filemanager.assettype",
+    "pk": 10,
+    "fields": {
+      "title": "OTHER ASSET"
+    }
+  },
+  {
+    "model": "filemanager.assettype",
+    "pk": 11,
+    "fields": {
+      "title": "PERSONAL"
+    }
+  },
+  {
+    "model": "filemanager.assettype",
+    "pk": 12,
+    "fields": {
+      "title": "AI"
+    }
+  }
+]
